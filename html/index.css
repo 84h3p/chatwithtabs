@@ -119,3 +119,9 @@ textarea:focus, input:focus {
 .suggestion {
   margin-bottom: 5px;
 }
+
+.tag {
+  background: rgb(250, 219, 20, 0.8);
+  padding: 4px;
+  color: #fff;
+}

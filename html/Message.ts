@@ -69,7 +69,8 @@ export default Vue.component('message', {
        .replace(/</g, '&lt;')
        .replace(/>/g, '&gt;')
        .replace(/"/g, '&quot;')
-       .replace(/'/g, '&#039;');
+       .replace(/'/g, '&#039;')
+       .replace(/@[^\n]+/g, (str) => `<span class="tag">${str}</span>`);
     },
   },
   props: {
