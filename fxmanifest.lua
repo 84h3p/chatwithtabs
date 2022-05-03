@@ -1,30 +1,59 @@
--- This resource is part of the default Cfx.re asset pack (cfx-server-data)
--- Altering or recreating for local use only is strongly discouraged.
+-- Define the FX Server version and game type
+fx_version "adamant"
+game "gta5"
 
-version '1.0.0'
-author 'Cfx.re <root@cfx.re>'
-description 'Provides baseline chat functionality using a NUI-based interface.'
-repository 'https://github.com/citizenfx/cfx-server-data'
+-- Manifest
+resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
 
-ui_page 'dist/ui.html'
+-- Resource Info
+name 'SenkaWolf-RPCCPack'
+description 'FiveM Standalone RP Chat & Command Basic Pack'
+author 'SenkaWolf (https://github.com/SenkaWolf)'
+version '2.3.1'
+url 'https://github.com/SenkaWolf/RPChat'
 
-client_script 'cl_chat.lua'
-server_script 'sv_chat.lua'
+-- Script
+shared_script 'config.lua'
 
-files {
-  'dist/ui.html',
-  'dist/index.css',
-  'html/vendor/*.css',
-  'html/vendor/fonts/*.woff2',
+client_scripts {
+	'client/server-management.lua',
+	'client/chat.lua',
+	'client/character.lua',
+	'client/vehicle.lua'
+}
+server_script {
+	'sv-version-check.lua',
+	'server/server-management.lua',
+	'server/chat.lua',
+	'server/character.lua',
+	'server/vehicle.lua'
 }
 
-fx_version 'adamant'
-games { 'rdr3', 'gta5' }
-rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aware my resources *will* become incompatible once RedM ships.'
+-- Made By SenkaWolf
 
-dependencies {
-  'yarn',
-  'webpack'
-}
-
-webpack_config 'webpack.config.js'
+--                              __
+--                            .d$$b
+--                          .' TO$;\
+--                         /  : TP._;
+--                        / _.;  :Tb|
+--                       /   /   ;j$j
+--                   _.-"       d$$$$
+--                 .' ..       d$$$$;
+--                /  /P'      d$$$$P. |\
+--               /   "      .d$$$P' |\^"l
+--             .'           `T$P^"""""  :
+--         ._.'      _.'                ;
+--      `-.-".-'-' ._.       _.-"    .-"
+--    `.-" _____  ._              .-"
+--   -(.g$$$$$$$b.              .'
+--     ""^^T$$$P^)            .(:
+--       _/  -"  /.'         /:/;
+--    ._.'-'`-'  ")/         /;/;
+-- `-.-"..--""   " /         /  ;
+--.-" ..--""        -'          :
+--..--""--.-"         (\      .-(\
+--  ..--""              `-\(\/;`
+--    _.                      :
+--                            ;`-
+--                           :\
+--                           ;
