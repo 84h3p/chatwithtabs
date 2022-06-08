@@ -43,7 +43,7 @@ em {
 
 .chat-messages {
   position: relative;
-  height: 95%;
+  height: 96%;
   font-size: 1.2rem;
   margin: 10px;
 
@@ -51,35 +51,31 @@ em {
   overflow-y: hidden;
 }
 
-
 .chat-input {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   position: absolute;
-
   top: 257px;
   left: 15px;
-  width: 38%;
-
-  box-sizing: border-box;
+  width: 600px;
 }
 
 .prefix {
   position: absolute;
-  margin-top: 2px;
+  margin-top: 0px;
   left: 4px;
 }
 
 textarea {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   display: block;
   box-sizing: border-box;
-  padding: 5px;
+  padding: 10px;
   padding-left: 27px;
   color: white;
-  background-color: rgba(120, 62, 80, 0.0);
+  background-color: rgba(123, 123, 123, 0.2);
   width: 100%;
   border-width: 0;
-  height: 34px;
+  height: 40px;
   overflow: hidden;
 }
 
@@ -104,7 +100,7 @@ textarea:focus, input:focus {
   font-size: 1.1rem;
   box-sizing: border-box;
   color: white;
-  background-color: rgba(44, 62, 80, 0.0);
+  background-color: rgba(123, 123, 123, 0.2);
   width: 100%;
 }
 
@@ -117,11 +113,16 @@ textarea:focus, input:focus {
 }
 
 .suggestion {
-  margin-bottom: 5px;
+  margin-bottom: 0.5%;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 .tag {
-  background: rgb(250, 219, 20, 0.8);
+  background: rgb(21,96,189, 10);
   padding: 4px;
   color: #fff;
+  border-radius: 6px;
 }
