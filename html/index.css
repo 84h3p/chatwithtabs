@@ -124,4 +124,5 @@ textarea:focus, input:focus {
   background: rgb(250, 219, 20, 0.8);
   padding: 4px;
   color: #fff;
+border-radius: 3px;
 }

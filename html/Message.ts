@@ -26,11 +26,6 @@ export default Vue.component('message', {
         return argEscaped;
       });
 
-      // format variant args
-      s = s.replace(/\{\{([a-zA-Z0-9_\-]+?)\}\}/g, (match, id) => {
-        const argEscaped = this.params[id] != undefined ? this.escape(this.params[id]) : match;
-        return argEscaped;
-      });
 
       return this.colorize(s);
     },
