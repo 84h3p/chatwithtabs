@@ -43,10 +43,11 @@ em {
 
 .chat-messages {
   position: relative;
-  height: 96%;
-  font-size: 1.2rem;
-  margin: 10px;
-
+  height: 98%;
+  font-size: 1.24rem;
+  font-weight: bold;
+  margin: 0;
+  background: rgba(123, 123, 123, 0.3);
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -68,14 +69,14 @@ em {
 textarea {
   font-size: 1.2rem;
   display: block;
-  box-sizing: border-box;
-  padding: 10px;
+  box-sizing: content-box;
+  padding: 4px;
   padding-left: 27px;
   color: white;
   background-color: rgba(123, 123, 123, 0.2);
-  width: 100%;
+  width: 116.5%;
   border-width: 0;
-  height: 40px;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -100,8 +101,8 @@ textarea:focus, input:focus {
   font-size: 1.1rem;
   box-sizing: border-box;
   color: white;
-  background-color: rgba(123, 123, 123, 0.2);
-  width: 100%;
+  background-color: rgba(123, 123, 123, 0.1);
+  width: 121.3%;
 }
 
 .help {
