@@ -34,8 +34,9 @@ em {
   top: 15px;
   left: 15px;
   width: 38%;
-  height: 240px;
-
+  height: 22%;
+  max-width: 1000px;
+  background-color: rgba(52, 73, 94, 0.7);
  
   -webkit-animation-duration: 2s;
 }
